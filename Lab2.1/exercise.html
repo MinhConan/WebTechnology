@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercise Lab 2.1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ExerciseAction.php" method="POST">
+            <label for="name"> Enter your name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="mssv"> Enter your student code:</label><br>
+            <input type="text" id="mssv" name="mssv"><br>
+            <label for="class"> Enter your class:</label><br>
+            <input type="text" id="class" name="class"><br>
+            <label for="uni"> Enter your University:</label><br>
+            <input type="text" id="uni" name="uni"><br>
+            What are your hobbies? <br>
+            <input type='checkbox' name='checkboxName[]' value='Reading'>Reading<br>
+            <input type='checkbox' name='checkboxName[]' value='cooking'>Cooking<br>
+            <input type='checkbox' name='checkboxName[]' value='Singing'>Singing<br>
+            <input type='checkbox' name='checkboxName[]' value='Running'>Running<br>
+            <input type='checkbox' name='checkboxName[]' value='Others'>Others<br>
+            Enter a lucky number:
+            <input type="number" name="num"><br>
+            <br></br>
+            <input type="submit" value="Click to submit">
+            <input type="reset" value="Erase and Restart">
+        </form>
+    </body>
+</html>
