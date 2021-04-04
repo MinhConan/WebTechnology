@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>11.7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript">
+      function changeColor(color, id) {
+        document.getElementById(id).style.color = color;
+      }
+    </script>
+  </head>
+  <body>
+    <a style="color: red; font-size: 32px">RED</a>
+    <p
+      id="p1"
+      onmouseover="changeColor('red', 'p1')"
+      onmouseout="changeColor('black', 'p1')"
+    >
+      mouse over here to change color to red
+    </p>
+    <a style="color: green; font-size: 32px">GREEN</a>
+    <p
+      id="p2"
+      onmouseover="changeColor('green', 'p2')"
+      onmouseout="changeColor('black', 'p2')"
+    >
+      mouse over here to change color to green
+    </p>
+    <a style="color: blue; font-size: 32px">BLUE</a>
+    <p
+      id="p3"
+      onmouseover="changeColor('blue', 'p3')"
+      onmouseout="changeColor('black', 'p3')"
+    >
+      mouse over here to change color to blue
+    </p>
+  </body>
+</html>
