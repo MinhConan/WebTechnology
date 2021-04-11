@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11.5</title>
+    <script>
+      var inputs= 1;
+      function addField() {
+        inputs++;
+        var form = document.getElementById("sweet-form");
+        var line_break = document.createElement("br");
+        var textBox = document.createElement("input");
+        textBox.setAttribute("type", "text");
+        textBox.setAttribute("name", "text_" + inputs);
+        textBox.setAttribute("value", "I am textbox #" + inputs);
+
+        form.appendChild(line_break);
+        form.appendChild(textBox);
+        return false;
+      }
+
+      function doLoad(){
+        document.getElementById('sweet-link').addEventListener('click', addField, false);
+      }
+
+      window.addEventListener('load', doLoad, false);
+    </script>
+  </head>
+  <body>
+    <form id="sweet-form">
+      <input
+        type="text"
+        name="text_1"
+        value="I am textbox #1"
+        onclick="setAlign(document.alignForm.alignSelect.value)"
+      />
+    </form>
+    <a id="sweet-link" href="#">Add text field</a>
+  </body>
+</html>

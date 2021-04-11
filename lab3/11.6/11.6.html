@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11.5</title>
+    <script>
+      function validatePotalCode() {
+        var potalCodeCheck = new RegExp("([A-Z][0-9]){3, 3}");
+        if (potalCodeCheck.test(document.myForm.potalCodeField.value)) {
+          alert("Valid code");
+          return true;
+        } else {
+          alert("Invalid code: " + document.myForm.potalCodeField.value);
+          return false;
+        }
+      }
+
+      function validateMoney() {
+        var moneyCheck = new RegExp("[0-9]*[\.][0-9][0-9]");
+        if (moneyCheck.test(document.myForm.moneyField.value)) {
+          alert("Valid money");
+          return true;
+        } else {
+          alert("Invalid money: " + document.myForm.moneyField.value);
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm">
+      Potal Code: <input type="text" name="potalCodeField"><input type="button" value="Check potal code" onclick="validatePotalCode()">
+      Money: <input type="text" name="moneyField"><input type="button" value="Check money" onclick="validateMoney()">
+    </form>
+  </body>
+</html>

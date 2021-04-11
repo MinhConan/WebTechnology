@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var num = 0;
+      function myFunc() {
+        num++;
+        document.myForm.inputName.value = "Call " + num + " times!";
+      }
+      window.setInterval("myFunc()", 1000);
+    </script>
+  </head>
+  <body>
+    <form name="myForm">
+      <input type="text" name="inputName" readonly />
+    </form>
+  </body>
+</html>
