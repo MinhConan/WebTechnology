@@ -1,0 +1,24 @@
+.advertise-container{
+  padding: 32px 15vw;
+}
+
+.page-heading{
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.heading-title{
+  border-bottom: 3px solid #958457;
+  height: 41px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.owl-prev, .owl-next{
+  background: #958457;
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  margin-left: 4px;
+}
